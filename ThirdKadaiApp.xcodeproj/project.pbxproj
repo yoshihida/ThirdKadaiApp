@@ -12,6 +12,13 @@
 		72E2E3191C9ED95A002FB7B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E2E3171C9ED95A002FB7B2 /* Main.storyboard */; };
 		72E2E31B1C9ED95A002FB7B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72E2E31A1C9ED95A002FB7B2 /* Assets.xcassets */; };
 		72E2E31E1C9ED95A002FB7B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E2E31C1C9ED95A002FB7B2 /* LaunchScreen.storyboard */; };
+		72E2E32B1C9EDA8E002FB7B2 /* ball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72E2E3251C9EDA8E002FB7B2 /* ball.jpg */; };
+		72E2E32C1C9EDA8E002FB7B2 /* watch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72E2E3261C9EDA8E002FB7B2 /* watch.jpg */; };
+		72E2E32D1C9EDA8E002FB7B2 /* glue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72E2E3271C9EDA8E002FB7B2 /* glue.jpg */; };
+		72E2E32E1C9EDA8E002FB7B2 /* mouse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72E2E3281C9EDA8E002FB7B2 /* mouse.jpg */; };
+		72E2E32F1C9EDA8E002FB7B2 /* car.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72E2E3291C9EDA8E002FB7B2 /* car.jpg */; };
+		72E2E3301C9EDA8E002FB7B2 /* pen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72E2E32A1C9EDA8E002FB7B2 /* pen.jpg */; };
+		72E430341C9FA1B00026E7B2 /* KakudaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E430331C9FA1B00026E7B2 /* KakudaiViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		72E2E31A1C9ED95A002FB7B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72E2E31D1C9ED95A002FB7B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72E2E31F1C9ED95A002FB7B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72E2E3251C9EDA8E002FB7B2 /* ball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ball.jpg; sourceTree = "<group>"; };
+		72E2E3261C9EDA8E002FB7B2 /* watch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = watch.jpg; sourceTree = "<group>"; };
+		72E2E3271C9EDA8E002FB7B2 /* glue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = glue.jpg; sourceTree = "<group>"; };
+		72E2E3281C9EDA8E002FB7B2 /* mouse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mouse.jpg; sourceTree = "<group>"; };
+		72E2E3291C9EDA8E002FB7B2 /* car.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car.jpg; sourceTree = "<group>"; };
+		72E2E32A1C9EDA8E002FB7B2 /* pen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pen.jpg; sourceTree = "<group>"; };
+		72E430331C9FA1B00026E7B2 /* KakudaiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KakudaiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +69,28 @@
 			isa = PBXGroup;
 			children = (
 				72E2E3131C9ED95A002FB7B2 /* AppDelegate.swift */,
+				72E430331C9FA1B00026E7B2 /* KakudaiViewController.swift */,
 				72E2E3151C9ED95A002FB7B2 /* ViewController.swift */,
 				72E2E3171C9ED95A002FB7B2 /* Main.storyboard */,
+				72E2E3311C9EDAA0002FB7B2 /* images */,
 				72E2E31A1C9ED95A002FB7B2 /* Assets.xcassets */,
 				72E2E31C1C9ED95A002FB7B2 /* LaunchScreen.storyboard */,
 				72E2E31F1C9ED95A002FB7B2 /* Info.plist */,
 			);
 			path = ThirdKadaiApp;
+			sourceTree = "<group>";
+		};
+		72E2E3311C9EDAA0002FB7B2 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				72E2E3251C9EDA8E002FB7B2 /* ball.jpg */,
+				72E2E3261C9EDA8E002FB7B2 /* watch.jpg */,
+				72E2E3271C9EDA8E002FB7B2 /* glue.jpg */,
+				72E2E3281C9EDA8E002FB7B2 /* mouse.jpg */,
+				72E2E3291C9EDA8E002FB7B2 /* car.jpg */,
+				72E2E32A1C9EDA8E002FB7B2 /* pen.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +154,13 @@
 			files = (
 				72E2E31E1C9ED95A002FB7B2 /* LaunchScreen.storyboard in Resources */,
 				72E2E31B1C9ED95A002FB7B2 /* Assets.xcassets in Resources */,
+				72E2E32B1C9EDA8E002FB7B2 /* ball.jpg in Resources */,
+				72E2E3301C9EDA8E002FB7B2 /* pen.jpg in Resources */,
 				72E2E3191C9ED95A002FB7B2 /* Main.storyboard in Resources */,
+				72E2E32F1C9EDA8E002FB7B2 /* car.jpg in Resources */,
+				72E2E32D1C9EDA8E002FB7B2 /* glue.jpg in Resources */,
+				72E2E32E1C9EDA8E002FB7B2 /* mouse.jpg in Resources */,
+				72E2E32C1C9EDA8E002FB7B2 /* watch.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72E430341C9FA1B00026E7B2 /* KakudaiViewController.swift in Sources */,
 				72E2E3161C9ED95A002FB7B2 /* ViewController.swift in Sources */,
 				72E2E3141C9ED95A002FB7B2 /* AppDelegate.swift in Sources */,
 			);
@@ -285,6 +321,7 @@
 				72E2E3241C9ED95A002FB7B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
