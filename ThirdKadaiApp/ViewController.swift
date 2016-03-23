@@ -26,8 +26,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
-        slideshow()
+        
+        imageView.image = UIImage(named:imagearray[arrayIndex])
+        //下文は、メンターからの指導により、上文のように訂正した。
+        //func slideshow()
+        
     }
 
     @IBAction func startStopAnimating(sender: AnyObject) {
@@ -48,12 +51,13 @@ class ViewController: UIViewController {
     }
     
     
-    func slideshow (){
+    
+   func slideshow (){
         if arrayIndex == 6{
             arrayIndex = 0
         }else{
-            imageView.image = UIImage(named:imagearray[arrayIndex])
             arrayIndex++
+            imageView.image = UIImage(named:imagearray[arrayIndex])
             
         }
       }
@@ -67,6 +71,7 @@ class ViewController: UIViewController {
         }else{
             arrayIndex++
             imageView.image = UIImage(named:imagearray[arrayIndex])
+            //上2文は、順序を逆にしたら、選択画像から拡大画像の表出が１つ次のがされるという現象がなくなった。
     }
     }
     
@@ -105,6 +110,8 @@ class ViewController: UIViewController {
         //resultViewController.imageView.image = UIImage(named:imagearray[arrayIndex])
         //メンターからの訂正により上文は、した文のように訂正
         resultViewController.image = UIImage(named:imagearray[arrayIndex])
+        //メンターに質問した。上の文の.imageは、2画面目の、
+        //kakudaiviewcontroller.swiftのimageだよ。
     }
     
      @IBAction func unwind(segue: UIStoryboardSegue){
