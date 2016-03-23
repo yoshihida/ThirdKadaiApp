@@ -53,13 +53,17 @@ class ViewController: UIViewController {
     
     
    func slideshow (){
-        if arrayIndex == 6{
+        if arrayIndex == 5{
             arrayIndex = 0
+            imageView.image = UIImage(named:imagearray[arrayIndex])
+            //上文の、imageView.image = UIImage(named:imagearray[arrayIndex])が、
+            //意味がわからず書いていなかった。今はわかる。
+            //この一文により、arrayIndexが５から０になった時点で、更新する必要があるためだ。
         }else{
             arrayIndex++
             imageView.image = UIImage(named:imagearray[arrayIndex])
             
-        }
+    }
       }
     
     
@@ -71,7 +75,7 @@ class ViewController: UIViewController {
         }else{
             arrayIndex++
             imageView.image = UIImage(named:imagearray[arrayIndex])
-            //上2文は、順序を逆にしたら、選択画像から拡大画像の表出が１つ次のがされるという現象がなくなった。
+            
     }
     }
     
@@ -94,8 +98,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    
-    
     
     //ここまでは順調にrunできた。あとは以下で、スライドショーのimageをタップすれば２画面目で、
     //拡大された画像が見られる設定にしたいのだが、
